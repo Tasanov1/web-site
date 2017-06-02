@@ -1,0 +1,333 @@
+/*========================================= CSS Reset ====================================================================================*/
+
+html, body, h1, h2, h3, h4, h5, h6, p, a, div, ul, li, blockquote {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    color: #666;
+}
+
+/*========================================= general styles ====================================================================================*/
+
+html {
+    background: #181714;
+}
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+h1, h2, h3, h4 {
+    text-transform: capitalize;
+    font-weight: 700;
+    padding: 40px 0 5px;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.6em;
+}
+h3 {
+    font-size: 1.15em;
+    padding: 60px 0 5px;
+}
+h4 {
+    font-size: 1.05em;
+}
+h5 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1em;
+	margin: 0 10px 10px 0;
+    padding: 0;
+}
+p {
+    padding: 10px 0;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #666;
+}
+b {
+    font-weight: 700;
+    color: #333;
+}
+small {
+   font-size: .7em;
+}
+hr {
+    border: 1px solid #ddd;
+}
+.floatRightImg {
+    margin: 10px 0 10px 20px;
+    padding: 5px;
+    float: right;
+    border: 1px solid #ccc;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+    padding: 50px 0 0;
+}
+
+/*========================================= header/nav ====================================================================================*/
+
+header {
+    width: 1000px;
+    height: 150px;
+    border-top: 11px solid dark-gray;
+    position: relative;
+    background: #fff;
+}
+header .logo {
+    width: 262px;
+    height: 112px;
+    background: url('../images/parallaxLogo.png') no-repeat;
+    position: absolute;
+    top: 21px;
+    left: 57px;
+}
+nav {
+    width: 1000px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+nav ul {
+    width: 563px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+nav ul li {
+    border-right: 1px solid #555;
+    float: left;
+    list-style: none;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a:link,
+nav ul li a:visited {
+    width: 140px;
+    padding: 6px 0;
+    color: #fff;
+    display: block;
+    background-color: #939598;
+    font-size: .8em;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li:hover a,
+nav ul li:active a {
+    background-color: #ef3e36;
+    transition: background .75s
+}
+nav ul li a.current {
+    background-color: #666;
+    cursor: default;
+}
+
+/*========================================= featureImage ====================================================================================*/
+
+.featureImageText {
+    width: 821px;
+    height: 73px;
+    margin-top: -6px;
+    position: relative;
+    float: right;
+}
+
+/*========================================= main ====================================================================================*/
+
+main {
+    clear: both;
+    width: 780px;
+    margin: 0 auto;
+    padding: 60px 0 100px;
+}
+main h1:first-child,
+main h2:first-child {
+    padding-top: 0;
+}
+main li,
+main ul {
+    padding: 10px 0;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #666;
+}
+main li {
+    margin: 0 0 0 25px;
+}
+#map {
+    border: 1px solid #444 ;
+    width: 780px;
+    height: 605px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.infoWin {
+    width: 150px; height: 80px;
+}
+.infoWin h5 {
+    margin-bottom: 7px;
+}
+.infoWin p {
+    padding: 0 0 3px;
+}
+
+.infoBox {
+    width: 780px;
+    margin: 40px auto;
+    padding: 25px 30px 30px;
+    background: #f1f1f1;
+    overflow: auto;
+}
+.infoBox h3 {
+    margin: 0 0 3px;
+    padding: 0 0 4px;
+    width: 400px;
+    border-bottom: 1px solid #ccc;
+}
+.infoBox p {
+    width: 380px;
+}
+.infoBox a:link, .infoBox a:visited {
+    color: #525252;
+}
+.infoBox a:hover, .infoBox a:active {
+    color: #ef3e36;
+    transition: color .5s
+}
+
+/*========================================= table ====================================================================================*/
+
+table {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #939598;
+    border-collapse: collapse;
+    background: #f9f9f9;
+}
+th {
+    padding: 5px 8px 8px;
+    background-color: #939598;
+    border-right: 1px solid #ccc;
+    color: #fff;
+    font-size: .9em;
+    font-weight: 700;
+    text-align: left;
+}
+td {
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    font-size: .8em;
+}
+.even {
+    background: #eee;
+}
+
+/*========================================= form ====================================================================================*/
+
+form {
+    width: 960;
+    margin: 10px 0;
+    padding: 5px 20px 10px;
+    border: 1px solid #939598;
+    background: #f9f9f9;
+}
+label {
+    color: #666;
+    font-size: .9em;
+    font-weight: 700;
+    text-align: left;
+}
+[type="text"], [name="text_area"] {
+    width: 300px;
+    padding: 5px;
+    background: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+[name="text_area"] {
+    height: 150px;
+    line-height: 1.2em;
+}
+.button {
+    margin: 20px 30px 0 0;
+    padding: 6px 30px;
+    color: #fff;
+    font-size: .9em;
+    font-weight: 700;
+    background-color: #666;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+.button:hover {
+    background: #ef3e36;
+    transition: background .75s
+}
+
+/*========================================= footer ====================================================================================*/
+
+blockquote {
+    margin: 0 0 20px;
+    padding: 15px 0;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #747374;
+    text-align: center;
+    font-size: 1.1em;
+    background: #ddd;
+    border-top: 1px solid #aaa;
+}
+footer {
+    background: #666;
+}
+footer .columnWrapper {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+footer .column {
+    width: 180px;
+    padding: 0 0 0 10px;
+    border-right: 2px solid #888;
+    float: left;
+}
+footer .column:last-child {
+    border-right: none;
+}
+footer h4 {
+    padding: 15px 0 7px;
+    color: #ddd;
+    text-transform: capitalize;
+}
+footer .address {
+    font-size: .75em;
+    line-height: 1.6em;
+    color: #bbb;
+}
+footer a:link, footer a:visited {
+    line-height: 1.6em;
+    color: #bbb;
+}
+footer a:hover, footer a:active {
+    color: #ef3e36;
+    transition: color .5s
+}
+footer .copyrightText {
+    padding: 40px 0 10px;
+    text-align: center;
+    font-size: .7em;
+    color: #aaa;
+}
+
